@@ -4,12 +4,9 @@
 
   export let gitHubUrl = undefined;
 
-  const LOGOS_PATH = `https://assets.twicpics.com/demo/@twicpics-components/logos/`;
-  const logoClass = `svelte-logo`;
-  const logoSrc = `${LOGOS_PATH}svelte.png`;
-  const logoAlt = `Svelte logo`;
+  const logoSrc = `https://assets.twicpics.com/demo/@twicpics-components/logos/svelte.png`;
   const redirect = `https://www.twicpics.com/docs/components/svelte-3?utm_source=github&utm_medium=organic&utm_campaign=components`;
-  const GITHUB = `https://github.com/TwicPics/components-demo-svelte3/blob/main`;
+  const GITHUB = `https://github.com/TwicPics/components-demo-svelte3`;
   const CODESANDBOX = `https://stackblitz.com/edit/github-wpprt7?file=`;
 
   $: _codeSandBoxUrl = `${CODESANDBOX}${gitHubUrl || 'README.md'}`;
@@ -26,7 +23,7 @@
           alt="TwicPics logo"
         />
         <span>x</span>
-        <img class={logoClass} src={logoSrc} alt={logoAlt} />
+        <img class="framework-logo" src={logoSrc} alt="Svelte Logo" />
       </h1>
     </a>
     <div class="ribbon">
@@ -113,7 +110,7 @@
       aspect-ratio: 140/39;
       width: 140px;
     }
-    & .svelte-logo {
+    & .framework-logo {
       aspect-ratio: 7/3;
       width: 100px;
     }
