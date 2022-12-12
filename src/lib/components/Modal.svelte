@@ -28,7 +28,7 @@
     position: absolute;
     z-index: 1; /* Sit on top */
     left: 0;
-    top: 0;
+    top: 130px;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
