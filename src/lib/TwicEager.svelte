@@ -110,7 +110,7 @@
     .demo-container {
       background-color: rgba(#ffffff, $alpha: 0.8);
       padding: 30px;
-      margin-top: 20%;
+      margin-top: calc(100px + 30vh);
     }
 
     .banner-container {
