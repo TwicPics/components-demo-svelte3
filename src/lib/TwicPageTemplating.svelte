@@ -5,23 +5,6 @@
   import { TwicImg } from '@twicpics/components/svelte3';
 
   let srcIsSet = false;
-  let action = `set`;
-
-  const onChangeSrc = () => {
-    srcIsSet = !srcIsSet;
-    if (srcIsSet) {
-      action = `unset`;
-    } else {
-      action = `set`;
-    }
-  };
-
-  const ratioClassArray = [`ratio-1by1`, `ratio-4by3`, `ratio-3by4`];
-  let ratioClassIndex = 0;
-
-  const onChangeAspectRatio = () => {
-    ratioClassIndex = (ratioClassIndex + 1) % ratioClassArray.length;
-  };
 
   const images = [
     `components/src-not-set/woman-1.jpg`,
@@ -54,37 +37,20 @@
       </p>
     </TwicAbstract>
     <div class="twic-testing-container">
-      <button class="twic-button" on:click={onChangeSrc}>
-        Click to {action} the src property
-      </button>
-      <button class="twic-button" on:click={onChangeAspectRatio}>
-        Click to change the aspect-ratio
+      <button class="twic-button" on:click={() => srcIsSet = !srcIsSet}>
+        Click to {srcIsSet ? `unset` : `set`} the src property
       </button>
     </div>
-    <div class="twic-grid {ratioClassArray[ratioClassIndex]}">
-      {#each images as image}
+    <div class="twic-grid">
+      {#each images as image, i}
         <div class="twic-item">
-          <TwicImg src={srcIsSet ? image : ``} focus="auto" placeholder="preview" />
+          <TwicImg
+            src={srcIsSet ? image : ``}
+            placeholder="preview"
+            ratio={i % 2 === 0 ? 1 : '4:3'}
+          />
         </div>
       {/each}
     </div>
   </TwicWrapper>
 </div>
-
-<style lang="scss">
-  #twic-working-without-images-container {
-    .twic-grid {
-      &.ratio-3by4 {
-        --twic-ratio: calc(3 / 4);
-      }
-
-      &.ratio-4by3 {
-        --twic-ratio: calc(4 / 3);
-      }
-
-      &.ratio-1by1 {
-        --twic-ratio: calc(1);
-      }
-    }
-  }
-</style>

@@ -47,6 +47,12 @@
           title: `Modal`
         },
         {
+          route: `/short-videos`,
+          videoSrc: `video/skater.mp4`,
+          title: `Short videos`,
+          intrinsic: '1280x720'
+        },
+        {
           route: `/slider`,
           imgSrc: `components/slider/pantone.jpg`,
           title: `Slider`
@@ -65,12 +71,6 @@
           route: `/page-templating`,
           imgSrc: `components/woman.jpg`,
           title: `Page templating`
-        },
-        {
-          route: `/shortVideos`,
-          videoSrc: `video/skater.mp4`,
-          title: `Short videos`,
-          intrinsic: '1280x720'
         }
       ]
     },

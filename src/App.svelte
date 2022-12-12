@@ -44,6 +44,7 @@
   router('/intrinsic', () => (page = Intrinsic));
   router('/modal', () => (page = Modal));
   router('/mode', () => (page = Mode));
+  router('/page-templating', () => (page = PageTemplating));
   router('/placeholder', () => (page = Placeholder));
   router('/position', () => (page = Position));
   router('/pretransform', () => (page = PreTransform));
@@ -53,8 +54,7 @@
   router('/state', () => (page = State));
   router('/style-driven', () => (page = StyleDriven));
   router('/transition', () => (page = Transition));
-  router('/page-templating', () => (page = PageTemplating));
-  router('/shortVideos', () => (page = ShortVideos));
+  router('/short-videos', () => (page = ShortVideos));
 
   router.start();
 </script>

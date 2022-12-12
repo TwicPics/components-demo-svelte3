@@ -26,7 +26,7 @@
     "vite": "3.2.4"
   },
   "dependencies": {
-    "@twicpics/components": "0.13.1",
+    "@twicpics/components": "0.14.1",
     "page": "1.11.6"
   }
 }
