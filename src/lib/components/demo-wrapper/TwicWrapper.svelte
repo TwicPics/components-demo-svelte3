@@ -173,7 +173,7 @@
         line-height: $ribbon-height;
         text-align: center;
         & a {
-          margin-right: 5px;
+          margin-right: 10px;
           & img {
             height: 23px;
             width: 23px;
