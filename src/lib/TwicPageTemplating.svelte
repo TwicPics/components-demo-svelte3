@@ -37,7 +37,7 @@
       </p>
     </TwicAbstract>
     <div class="twic-testing-container">
-      <button class="twic-button" on:click={() => srcIsSet = !srcIsSet}>
+      <button class="twic-button" on:click={() => (srcIsSet = !srcIsSet)}>
         Click to {srcIsSet ? `unset` : `set`} the src property
       </button>
     </div>
