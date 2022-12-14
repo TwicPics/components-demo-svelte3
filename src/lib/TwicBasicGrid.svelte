@@ -54,7 +54,14 @@
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="/football.jpg" step="100" focus="auto" ratio="2/3" placeholder="maincolor" />
+        <TwicImg
+          src="/football.jpg"
+          step="100"
+          focus="auto"
+          ratio="2/3"
+          mode="contain"
+          placeholder="maincolor"
+        />
         <span>
           <Code>ratio="2/3"</Code>,
           <Code>mode="contain"</Code> &
