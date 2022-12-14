@@ -10,52 +10,19 @@
 
   const images = [
     {
-      url: `components/slider/pantone.jpg`
+      url: `components/bulk-loading/pool-1.jpg`
     },
     {
-      url: `components/slider/coffee.jpg`
+      url: `components/bulk-loading/pool-2.jpg`
     },
     {
-      url: `components/slider/reading.jpg`
+      url: `components/bulk-loading/pool-3.jpg`
     },
     {
-      url: `components/slider/cat-2.jpg`
+      url: `components/bulk-loading/pool-4.jpg`
     },
     {
-      url: `components/slider/mirror.jpg`
-    },
-    {
-      url: `components/slider/books.jpg`
-    },
-    {
-      url: `components/slider/sea.jpg`
-    },
-    {
-      url: `components/slider/frames.jpg`
-    },
-    {
-      url: `components/slider/dried-flower.jpg`
-    },
-    {
-      url: `components/slider/dune.jpg`
-    },
-    {
-      url: `components/slider/coffee-2.jpg`
-    },
-    {
-      url: `components/slider/yak.jpg`
-    },
-    {
-      url: `components/slider/dried-flower-2.jpg`
-    },
-    {
-      url: `components/slider/guitar.jpg`
-    },
-    {
-      url: `components/slider/field.jpg`
-    },
-    {
-      url: `components/slider/woman-and-sand.jpg`
+      url: `components/bulk-loading/pool-5.jpg`
     }
   ];
 
@@ -91,14 +58,14 @@
     <TwicView>
       <div class="polaroids" on:click={changeImage}>
         <div class="polaroid bottom" class:left={current % 2 === 0}>
-          <TwicImg src={images[penultimate].url} />
+          <TwicImg src={images[penultimate].url} focus="0px100p" />
         </div>
         <div class="polaroid bottom previous" class:left={(current - 1) % 2 === 0}>
-          <TwicImg src={images[last].url} />
+          <TwicImg src={images[last].url} focus="0px100p" />
         </div>
         {#each images as img, i}
           <div class="polaroid" class:top={i === current} class:left={i % 2 === 0}>
-            <TwicImg src={img.url} />
+            <TwicImg src={img.url} focus="0px100p" />
           </div>
         {/each}
       </div>
@@ -109,7 +76,7 @@
 <style lang="scss">
   #twic-bulk-loading-container {
     $pola-width: 300px;
-    $pola-height: 330px;
+    $pola-height: 360px;
     $border: 15px solid #ffffff;
     .polaroids {
       width: 100%;
@@ -125,8 +92,9 @@
 
     .polaroid {
       border: $border;
-      border-bottom: 30px solid white;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+      border-bottom: 50px solid white;
+      border-radius: 4px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
       background-color: #ffffff;
       position: absolute;
       left: 50%;

@@ -18,13 +18,14 @@
         },
         {
           route: `/bulk-loading`,
-          imgSrc: `https://assets.twicpics.com/examples/football.jpg`,
-          title: `Bulk Loading`
+          imgSrc: `components/bulk-loading/pool-1.jpg`,
+          focus: `50px100p`,
+          title: `Bulk loading`
         },
         {
           route: `/color-blindness`,
-          imgSrc: `components/colored-balloons.jpg`,
-          title: `Color Blindness`
+          imgSrc: `components/color-blindless/umbrellas.jpg`,
+          title: `Color blindness`
         },
         {
           route: `/flip-cards`,
@@ -47,6 +48,11 @@
           title: `Modal`
         },
         {
+          route: `/page-templating`,
+          imgSrc: `components/woman.jpg`,
+          title: `Page templating`
+        },
+        {
           route: `/short-videos`,
           videoSrc: `video/skater.mp4`,
           title: `Short videos`,
@@ -66,11 +72,6 @@
           route: `/style-driven`,
           imgSrc: `components/horse.jpg`,
           title: `Style driven`
-        },
-        {
-          route: `/page-templating`,
-          imgSrc: `components/woman.jpg`,
-          title: `Page templating`
         }
       ]
     },
@@ -79,17 +80,18 @@
       items: [
         {
           route: `/anchor`,
-          imgSrc: `cat_1x1.jpg`,
+          imgSrc: `components/anchor/anchor.jpg`,
           title: `anchor`
         },
         {
           route: `/bot`,
-          imgSrc: `components/puppy.jpg`,
+          imgSrc: `components/bot/robot.jpg`,
           title: `bot`
         },
         {
           route: `/eager`,
-          imgSrc: `components/eager/light-red-flares.jpg`,
+          imgSrc: `components/eager/subway-1.jpg`,
+          preTransform: `flip=x`,
           title: `eager`
         },
         {
@@ -99,7 +101,8 @@
         },
         {
           route: `/intrinsic`,
-          imgSrc: `components/fantasy.jpg`,
+          imgSrc: `components/intrinsic/moon.jpg`,
+          focus: `50px50p`,
           title: `intrinsic`
         },
         {
@@ -110,11 +113,13 @@
         {
           route: `/placeholder`,
           imgSrc: `components/cat.jpg`,
+          focus: `50px50p`,
           title: `placeholder`
         },
         {
           route: `/position`,
           imgSrc: `components/position/horse.jpg`,
+          focus: `50px50p`,
           title: `position`
         },
         {
@@ -125,11 +130,12 @@
         {
           route: `/ratio`,
           imgSrc: `components/woman-and-winter.jpg`,
+          focus: `50px50p`,
           title: `ratio`
         },
         {
           route: `/state`,
-          imgSrc: `components/states/autumn.jpg`,
+          imgSrc: `components/state/autumn.jpg`,
           title: `state`
         },
         {
@@ -152,7 +158,12 @@
             <a href={item.route}>
               <figure class="twic-item">
                 {#if item.imgSrc}
-                  <TwicImg src={item.imgSrc} focus="auto" ratio="0.95" />
+                  <TwicImg
+                    src={item.imgSrc}
+                    focus={item.focus ? item.focus : 'auto'}
+                    preTransform={item.preTransform ? item.preTransform : ''}
+                    ratio="0.95"
+                  />
                 {:else}
                   <TwicVideo src={item.videoSrc} ratio="0.95" intrinsic={item.intrinsic} />
                 {/if}

@@ -82,7 +82,13 @@
     </div>
     <div class="twic-grid">
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="contain" ratio="4/3" />
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=auto/cover=1:1"
+          anchor={actualHorizontal.anchor}
+          mode="contain"
+          ratio="4/3"
+        />
         <span>
           <span>
             <Code>anchor="{actualHorizontal.anchor}"</Code>
@@ -91,7 +97,13 @@
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualVertical.anchor} mode="contain" ratio="3/4" />
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=auto/cover=1:1"
+          anchor={actualVertical.anchor}
+          mode="contain"
+          ratio="3/4"
+        />
         <span>
           <span>
             <span>
@@ -102,7 +114,13 @@
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="cover" ratio="3/4" />
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=auto/cover=1:1"
+          anchor={actualHorizontal.anchor}
+          mode="cover"
+          ratio="3/4"
+        />
         <span>
           <span>
             <Code>anchor="{actualHorizontal.anchor}"</Code>
@@ -111,7 +129,13 @@
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualVertical.anchor} mode="cover" ratio="4/3" />
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=auto/cover=1:1"
+          anchor={actualVertical.anchor}
+          mode="cover"
+          ratio="4/3"
+        />
         <span>
           <span>
             <span>

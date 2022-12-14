@@ -8,16 +8,16 @@
 
   const config = [
     {
-      src: 'components/states/autumn.jpg'
+      src: 'components/state/autumn.jpg'
     },
     {
-      src: 'components/states/winter.jpg'
+      src: 'components/state/winter.jpg'
     },
     {
-      src: 'components/states/springForest.jpg'
+      src: 'components/state/spring.jpg'
     },
     {
-      src: 'components/states/summer.jpg'
+      src: 'components/state/summer.jpg'
     }
   ];
 

@@ -27,7 +27,7 @@
         </p>
       </TwicAbstract>
       <div class="hero">
-        <TwicImg src="components/fantasy.jpg" ratio="none" intrinsic="6526x3000" />
+        <TwicImg src="components/intrinsic/moon.jpg" ratio="none" intrinsic="6526x3000" />
       </div>
     </div>
   </TwicWrapper>
