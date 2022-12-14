@@ -49,6 +49,7 @@
         },
         {
           route: `/page-templating`,
+          focus: `bottom`,
           imgSrc: `components/woman.jpg`,
           title: `Page templating`
         },
