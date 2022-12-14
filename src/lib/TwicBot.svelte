@@ -73,13 +73,13 @@
     <div class="twic-grid">
       <div class="twic-item">
         <img
-          src="https://demo.twic.pics/https://assets.twicpics.com/examples/football.jpg?twic=v1/cover=400x400"
+          src="https://demo.twic.pics/https://assets.twicpics.com/demo/@twicpics-components/bot/robot.jpg?twic=v1/cover=400x400"
         />
         <span> Media seen by search engine bots </span>
       </div>
       <div class="twic-item">
         <TwicImg
-          src="https://assets.twicpics.com/examples/football.jpg"
+          src="https://assets.twicpics.com/demo/@twicpics-components/bot/robot.jpg"
           bot="cover=400x400"
           ratio={actualConfig.ratio}
         />
@@ -88,7 +88,7 @@
 
       <div class="twic-item">
         <TwicImg
-          src="https://assets.twicpics.com/examples/football.jpg"
+          src="https://assets.twicpics.com/demo/@twicpics-components/bot/robot.jpg"
           bot="cover=400x400"
           preTransform={actualConfig.preTransform}
         />
@@ -96,7 +96,7 @@
       </div>
       <div class="twic-item">
         <TwicImg
-          src="https://assets.twicpics.com/examples/football.jpg"
+          src="https://assets.twicpics.com/demo/@twicpics-components/bot/robot.jpg"
           bot="cover=400x400"
           anchor={actualConfig.anchor}
         />

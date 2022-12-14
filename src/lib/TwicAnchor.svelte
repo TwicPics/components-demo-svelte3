@@ -63,6 +63,13 @@
         <Code>bottom-right</Code>.
       </p>
       <p>
+        Please note that anchor is applied after an eventual transformation defined with <a
+          href="/preTransform"
+          target="_blank"
+          rel="noreferrer">preTransform</a
+        > property.
+      </p>
+      <p>
         For a more specific positionning see <a href="/position" target="_blank" rel="noreferrer"
           >position</a
         >
@@ -82,7 +89,13 @@
     </div>
     <div class="twic-grid">
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="contain" ratio="4/3" />
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=bottom-right/cover=1:1"
+          anchor={actualHorizontal.anchor}
+          mode="contain"
+          ratio="4/3"
+        />
         <span>
           <span>
             <Code>anchor="{actualHorizontal.anchor}"</Code>
@@ -91,7 +104,13 @@
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualVertical.anchor} mode="contain" ratio="3/4" />
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=bottom-right/cover=1:1"
+          anchor={actualVertical.anchor}
+          mode="contain"
+          ratio="3/4"
+        />
         <span>
           <span>
             <span>
@@ -102,7 +121,13 @@
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="cover" ratio="3/4" />
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=bottom/cover=1:1"
+          anchor={actualHorizontal.anchor}
+          mode="cover"
+          ratio="3/4"
+        />
         <span>
           <span>
             <Code>anchor="{actualHorizontal.anchor}"</Code>
@@ -111,7 +136,13 @@
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualVertical.anchor} mode="cover" ratio="4/3" />
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="cover=1:1"
+          anchor={actualVertical.anchor}
+          mode="cover"
+          ratio="4/3"
+        />
         <span>
           <span>
             <span>

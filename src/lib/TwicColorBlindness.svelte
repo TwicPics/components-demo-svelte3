@@ -6,7 +6,7 @@
 
   let indiceConfig = 0;
 
-  const imgUrl = `components/colored-balloons.jpg`;
+  const imgUrl = `components/color-blindless/umbrellas.jpg`;
 
   const config = [
     {
