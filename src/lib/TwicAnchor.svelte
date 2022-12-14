@@ -63,6 +63,13 @@
         <Code>bottom-right</Code>.
       </p>
       <p>
+        Please note that anchor is applied after an eventual transformation defined with <a
+          href="/preTransform"
+          target="_blank"
+          rel="noreferrer">preTransform</a
+        > property.
+      </p>
+      <p>
         For a more specific positionning see <a href="/position" target="_blank" rel="noreferrer"
           >position</a
         >
@@ -84,7 +91,7 @@
       <div class="twic-item">
         <TwicImg
           src="components/anchor/anchor.jpg"
-          preTransform="focus=auto/cover=1:1"
+          preTransform="focus=bottom-right/cover=1:1"
           anchor={actualHorizontal.anchor}
           mode="contain"
           ratio="4/3"
@@ -99,7 +106,7 @@
       <div class="twic-item">
         <TwicImg
           src="components/anchor/anchor.jpg"
-          preTransform="focus=auto/cover=1:1"
+          preTransform="focus=bottom-right/cover=1:1"
           anchor={actualVertical.anchor}
           mode="contain"
           ratio="3/4"
@@ -116,7 +123,7 @@
       <div class="twic-item">
         <TwicImg
           src="components/anchor/anchor.jpg"
-          preTransform="focus=auto/cover=1:1"
+          preTransform="focus=bottom/cover=1:1"
           anchor={actualHorizontal.anchor}
           mode="cover"
           ratio="3/4"
@@ -131,7 +138,7 @@
       <div class="twic-item">
         <TwicImg
           src="components/anchor/anchor.jpg"
-          preTransform="focus=auto/cover=1:1"
+          preTransform="cover=1:1"
           anchor={actualVertical.anchor}
           mode="cover"
           ratio="4/3"
