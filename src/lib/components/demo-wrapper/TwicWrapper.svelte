@@ -29,15 +29,15 @@
     <div class="ribbon">
       <div>
         <a target="_blank" href={_gitHubUrl} rel="noreferrer" title="Open in Github"
-          ><img class="github" src={githubLogo} alt="Open in Github" /></a
+          ><img src={githubLogo} alt="Open in Github" /></a
         >
         <a target="_blank" href={_codeSandBoxUrl} rel="noreferrer" title="Open in StackBlitz"
-          ><img class="github" src={stackBlitzLogo} alt="Open in StackBlitz" /></a
+          ><img src={stackBlitzLogo} alt="Open in StackBlitz" /></a
         >
       </div>
     </div>
     <div class="tags-container">
-      <div class="tag tag-components">@twicpics-components</div>
+      <div class="tag">@twicpics-components</div>
       <a
         href={redirect}
         target="_blank"
@@ -63,13 +63,10 @@
 
   #twic-demo-wrapper {
     & #twic-demo-container {
+      margin: 40px;
       margin-top: $height + 40px;
       max-width: 1500px;
-    }
-  }
 
-  #twic-demo-wrapper {
-    & #twic-demo-container {
       @media screen and (min-width: 768px) {
         margin: 80px 60px;
         margin-top: $height + 80px;
@@ -115,47 +112,59 @@
       width: 100px;
     }
     & .tags-container {
+      bottom: 0;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 12px;
-      width: 100%;
+      justify-content: center;
       position: absolute;
-      bottom: 0;
       left: 50%;
       transform: translate(-50%, 50%);
-    }
-    & .tag {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      font-weight: 600;
-      border-radius: 30px;
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-      background-color: $green;
-    }
-    & .tag--bg-purple-rain {
-      color: #fff;
-      background-color: $deep-purple;
-    }
-    & .documentation-link {
-      &:link,
-      &:visited {
-        text-decoration: none;
-        transition: all 0.3s;
+      font-size: 0.7em;
+      width: 100%;
+
+      @media (min-width: 640px) {
+        font-size: 0.9em;
       }
-      &:hover,
-      &:active {
-        transform: translateY(-5px);
-        box-shadow: 0 9px 4px rgba(0, 0, 0, 0.09);
-        background: linear-gradient(to right, $green, $deep-purple);
-      }
-      &:after {
-        content: url('../../../assets/arrow-icon.svg');
-        width: 20px;
-        height: 20px;
+
+      & .tag {
+        align-items: center;
+        background-color: $green;
+        border-radius: 30px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        font-weight: 600;
+        gap: 4px;
+        padding: 4px 8px;
+
+        &.tag--bg-purple-rain {
+          color: #fff;
+          background-color: $deep-purple;
+        }
+        &.documentation-link {
+          &:link,
+          &:visited {
+            text-decoration: none;
+            transition: all 0.3s;
+          }
+          &:hover,
+          &:active {
+            transform: translateY(-5px);
+            box-shadow: 0 9px 4px rgba(0, 0, 0, 0.09);
+            background: linear-gradient(to right, $green, $deep-purple);
+          }
+          &:after {
+            content: url('../../../assets/arrow-icon.svg');
+            width: 20px;
+            height: 20px;
+          }
+        }
+        @media (min-width: 640px) {
+          padding: 8px 16px;
+        }
       }
     }
+
     .ribbon {
       background-color: $bg-github;
       overflow: hidden;
@@ -181,29 +190,12 @@
             vertical-align: middle;
             margin-top: -4px;
             transition-duration: 200ms;
+            width: 20px;
             &:hover {
               transform: rotate(45deg);
             }
           }
         }
-      }
-    }
-    .tags-container {
-      font-size: 0.7em;
-      @media (min-width: 640px) {
-        font-size: 0.9em;
-      }
-    }
-    .tag {
-      padding: 4px 8px;
-      @media (min-width: 640px) {
-        padding: 8px 16px;
-      }
-    }
-    .github {
-      width: 20px;
-      & svg path {
-        fill: blue;
       }
     }
   }
