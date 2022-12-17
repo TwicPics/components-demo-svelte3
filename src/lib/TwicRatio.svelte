@@ -67,9 +67,6 @@
           <span class="twic-code"
             >ratio="{ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1}"</span
           >
-          {#if !ratioValues[ratioIndex]}
-            - default ratio
-          {/if}
           (mode is <Code>cover</Code>)
         </span>
       </div>
@@ -79,9 +76,6 @@
           <span class="twic-code"
             >ratio="{ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1}"</span
           >
-          {#if !ratioValues[ratioIndex]}
-            - default ratio
-          {/if}
           (mode is <Code>contain</Code>)
         </span>
       </div>
