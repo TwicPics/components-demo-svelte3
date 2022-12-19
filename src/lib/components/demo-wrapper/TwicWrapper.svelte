@@ -4,13 +4,13 @@
 
   export let gitHubUrl = undefined;
 
-  const logoSrc = `https://assets.twicpics.com/demo/@twicpics-components/logos/svelte.png`;
-  const redirect = `https://www.twicpics.com/docs/components/svelte-3?utm_source=github&utm_medium=organic&utm_campaign=components`;
+  const documentationUrl = `https://www.twicpics.com/docs/components/svelte-3?utm_source=github&utm_medium=organic&utm_campaign=components`;
+  const frameworkLogo = `https://assets.twicpics.com/demo/@twicpics-components/logos/svelte.png`;
   const GITHUB = `https://github.com/TwicPics/components-demo-svelte3`;
-  const CODESANDBOX = `https://stackblitz.com/edit/github-wpprt7?file=`;
+  const ONLINE_URL = `https://stackblitz.com/edit/github-wpprt7?file=`;
 
-  $: _codeSandBoxUrl = `${CODESANDBOX}${gitHubUrl || 'README.md'}`;
-  $: _gitHubUrl = gitHubUrl ? `${GITHUB}/blob/main/${gitHubUrl}` : GITHUB;
+  $: onlineUrl = `${ONLINE_URL}${gitHubUrl || 'README.md'}`;
+  $: gitHubRedirect = gitHubUrl ? `${GITHUB}/blob/main/${gitHubUrl}` : GITHUB;
 </script>
 
 <div id="twic-demo-wrapper" class="">
@@ -23,15 +23,15 @@
           alt="TwicPics logo"
         />
         <span>x</span>
-        <img class="framework-logo" src={logoSrc} alt="Svelte Logo" />
+        <img class="framework-logo" src={frameworkLogo} alt="Svelte Logo" />
       </h1>
     </a>
     <div class="ribbon">
       <div>
-        <a target="_blank" href={_gitHubUrl} rel="noreferrer" title="Open in Github"
+        <a target="_blank" href={gitHubRedirect} rel="noreferrer" title="Open in Github"
           ><img src={githubLogo} alt="Open in Github" /></a
         >
-        <a target="_blank" href={_codeSandBoxUrl} rel="noreferrer" title="Open in StackBlitz"
+        <a target="_blank" href={onlineUrl} rel="noreferrer" title="Open in StackBlitz"
           ><img src={stackBlitzLogo} alt="Open in StackBlitz" /></a
         >
       </div>
@@ -39,7 +39,7 @@
     <div class="tags-container">
       <div class="tag">@twicpics-components</div>
       <a
-        href={redirect}
+        href={documentationUrl}
         target="_blank"
         class="documentation-link tag tag--bg-purple-rain"
         rel="noreferrer"
@@ -190,7 +190,6 @@
             vertical-align: middle;
             margin-top: -4px;
             transition-duration: 200ms;
-            width: 20px;
             &:hover {
               transform: rotate(45deg);
             }
