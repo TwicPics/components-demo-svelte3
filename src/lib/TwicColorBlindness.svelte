@@ -40,7 +40,7 @@
       <ul>
         <li>
           <a
-            href="https://www.twicpics.com/docs/reference/transformations#span-classexperimentalachromatopsiaspan?utm_source=github&utm_medium=organic&utm_campaign=components"
+            href="https://www.twicpics.com/docs/reference/transformations?utm_source=github&utm_medium=organic&utm_campaign=components#span-classexperimentalachromatopsiaspan"
             target="_blank"
             rel="noreferrer"
           >
@@ -49,7 +49,7 @@
         </li>
         <li>
           <a
-            href="https://www.twicpics.com/docs/reference/transformations#span-classexperimentaldeuteranopiaspan?utm_source=github&utm_medium=organic&utm_campaign=components"
+            href="https://www.twicpics.com/docs/reference/transformations?utm_source=github&utm_medium=organic&utm_campaign=components#span-classexperimentaldeuteranopiaspan"
             target="_blank"
             rel="noreferrer"
           >
@@ -58,7 +58,7 @@
         </li>
         <li>
           <a
-            href="https://www.twicpics.com/docs/reference/transformations#span-classexperimentalprotanopiaspan?utm_source=github&utm_medium=organic&utm_campaign=components"
+            href="https://www.twicpics.com/docs/reference/transformations?utm_source=github&utm_medium=organic&utm_campaign=components#span-classexperimentalprotanopiaspan"
             target="_blank"
             rel="noreferrer"
           >

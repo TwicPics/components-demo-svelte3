@@ -1,6 +1,6 @@
 # TwicPics Components + Svelte + Vite
 
-This project is a demonstration project of [TwicPics Components](https://github.com/TwicPics/components/blob/main/documentation/svelte3.md) using [Svelte3](https://svelte.dev/).
+This project is a demonstration project of [TwicPics Components](https://www.twicpics.com/docs/components/svelte-3?utm_source=github&utm_medium=organic&utm_campaign=components) using [Svelte3](https://svelte.dev/).
 
 ## Recommended IDE Setup
 
@@ -85,7 +85,7 @@ TwicPics components for Svelte3 comes as an `ES module`.
 
 An example of configuration is already set within `main.js` file.
 
-All you have to do is set your configuration options to the desired values ([see documentation](https://github.com/TwicPics/components/blob/main/documentation/svelte3.md#setup-options)).
+All you have to do is set your configuration options to the desired values ([see documentation](https://www.twicpics.com/docs/components/svelte-3?utm_source=github&utm_medium=organic&utm_campaign=components#setup-options)).
 
 ## Examples
 

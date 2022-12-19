@@ -6,7 +6,7 @@
 
   const verticalConfig = [
     {
-      anchor: `center`
+      anchor: undefined
     },
     {
       anchor: `top`
@@ -18,7 +18,7 @@
 
   const horizontalConfig = [
     {
-      anchor: `center`
+      anchor: undefined
     },
     {
       anchor: `left`
@@ -92,13 +92,13 @@
         <TwicImg
           src="components/anchor/anchor.jpg"
           preTransform="focus=bottom-right/cover=1:1"
-          anchor={actualHorizontal.anchor}
+          anchor={actualHorizontal.anchor || ``}
           mode="contain"
           ratio="4/3"
         />
         <span>
           <span>
-            <Code>anchor="{actualHorizontal.anchor}"</Code>
+            <Code>anchor="{actualHorizontal.anchor || ``}"</Code>
             <Code>mode="contain"</Code>
           </span>
         </span>
@@ -107,14 +107,14 @@
         <TwicImg
           src="components/anchor/anchor.jpg"
           preTransform="focus=bottom-right/cover=1:1"
-          anchor={actualVertical.anchor}
+          anchor={actualVertical.anchor || ``}
           mode="contain"
           ratio="3/4"
         />
         <span>
           <span>
             <span>
-              <Code>anchor="{actualVertical.anchor}"</Code>
+              <Code>anchor="{actualVertical.anchor || ``}"</Code>
               <Code>mode="contain"</Code>
             </span>
           </span>
@@ -124,13 +124,13 @@
         <TwicImg
           src="components/anchor/anchor.jpg"
           preTransform="focus=bottom/cover=1:1"
-          anchor={actualHorizontal.anchor}
+          anchor={actualHorizontal.anchor || ``}
           mode="cover"
           ratio="3/4"
         />
         <span>
           <span>
-            <Code>anchor="{actualHorizontal.anchor}"</Code>
+            <Code>anchor="{actualHorizontal.anchor || ``}"</Code>
             <Code>mode="cover"</Code>
           </span>
         </span>
@@ -139,14 +139,14 @@
         <TwicImg
           src="components/anchor/anchor.jpg"
           preTransform="cover=1:1"
-          anchor={actualVertical.anchor}
+          anchor={actualVertical.anchor || ``}
           mode="cover"
           ratio="4/3"
         />
         <span>
           <span>
             <span>
-              <Code>anchor="{actualVertical.anchor}"</Code>
+              <Code>anchor="{actualVertical.anchor || ``}"</Code>
               <Code>mode="cover"</Code>
             </span>
           </span>
