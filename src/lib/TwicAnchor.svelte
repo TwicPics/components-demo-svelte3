@@ -6,7 +6,7 @@
 
   const verticalConfig = [
     {
-      anchor: undefined
+      anchor: `center`
     },
     {
       anchor: `top`
@@ -18,7 +18,7 @@
 
   const horizontalConfig = [
     {
-      anchor: undefined
+      anchor: `center`
     },
     {
       anchor: `left`
@@ -59,8 +59,8 @@
         Accepted values are <Code>top</Code>,
         <Code>bottom</Code>, <Code>left</Code>,
         <Code>right</Code>, <Code>top-left</Code>,
-        <Code>top-right</Code>, <Code>bottom-left</Code> and
-        <Code>bottom-right</Code>.
+        <Code>top-right</Code>, <Code>bottom-left</Code>, <Code>bottom-right</Code> and
+        <Code>center</Code>.
       </p>
       <p>
         Please note that anchor is applied after an eventual transformation defined with <a
@@ -92,13 +92,13 @@
         <TwicImg
           src="components/anchor/anchor.jpg"
           preTransform="focus=bottom-right/cover=1:1"
-          anchor={actualHorizontal.anchor || ``}
+          anchor={actualHorizontal.anchor}
           mode="contain"
           ratio="4/3"
         />
         <span>
           <span>
-            <Code>anchor="{actualHorizontal.anchor || ``}"</Code>
+            <Code>anchor="{actualHorizontal.anchor}"</Code>
             <Code>mode="contain"</Code>
           </span>
         </span>
@@ -107,14 +107,14 @@
         <TwicImg
           src="components/anchor/anchor.jpg"
           preTransform="focus=bottom-right/cover=1:1"
-          anchor={actualVertical.anchor || ``}
+          anchor={actualVertical.anchor}
           mode="contain"
           ratio="3/4"
         />
         <span>
           <span>
             <span>
-              <Code>anchor="{actualVertical.anchor || ``}"</Code>
+              <Code>anchor="{actualVertical.anchor}"</Code>
               <Code>mode="contain"</Code>
             </span>
           </span>
@@ -124,13 +124,13 @@
         <TwicImg
           src="components/anchor/anchor.jpg"
           preTransform="focus=bottom/cover=1:1"
-          anchor={actualHorizontal.anchor || ``}
+          anchor={actualHorizontal.anchor}
           mode="cover"
           ratio="3/4"
         />
         <span>
           <span>
-            <Code>anchor="{actualHorizontal.anchor || ``}"</Code>
+            <Code>anchor="{actualHorizontal.anchor}"</Code>
             <Code>mode="cover"</Code>
           </span>
         </span>
@@ -139,14 +139,14 @@
         <TwicImg
           src="components/anchor/anchor.jpg"
           preTransform="cover=1:1"
-          anchor={actualVertical.anchor || ``}
+          anchor={actualVertical.anchor}
           mode="cover"
           ratio="4/3"
         />
         <span>
           <span>
             <span>
-              <Code>anchor="{actualVertical.anchor || ``}"</Code>
+              <Code>anchor="{actualVertical.anchor}"</Code>
               <Code>mode="cover"</Code>
             </span>
           </span>
