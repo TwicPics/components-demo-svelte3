@@ -23,7 +23,7 @@
 
 <!-- demonstrates placeholders features -->
 <div id="twic-placeholder-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicPlaceholder.svelte">
+  <TwicWrapper filename="src/lib/TwicPlaceholder.svelte">
     <TwicAbstract title="placeholder property">
       <p>
         <strong>

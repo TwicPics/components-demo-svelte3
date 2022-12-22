@@ -51,7 +51,7 @@
 </script>
 
 <div id="twic-eager-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicEager.svelte">
+  <TwicWrapper filename="src/lib/TwicEager.svelte">
     <div class="demo-container">
       <TwicAbstract title="eager property">
         <p>

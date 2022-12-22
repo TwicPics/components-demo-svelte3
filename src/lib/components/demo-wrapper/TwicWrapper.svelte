@@ -2,15 +2,33 @@
   import githubLogo from '../../../assets/github-mark-white.svg';
   import stackBlitzLogo from '../../../assets/stackblitz.svg';
 
-  export let gitHubUrl = undefined;
+  export let filename = undefined;
+
+  const GITHUB_REPO_NAME = `TwicPics/components-demo-svelte3`;
+  const GITHUB = `https://github.com/${GITHUB_REPO_NAME}`;
 
   const documentationUrl = `https://www.twicpics.com/docs/components/svelte-3?utm_source=github&utm_medium=organic&utm_campaign=components`;
   const frameworkLogo = `https://assets.twicpics.com/demo/@twicpics-components/logos/svelte.png`;
-  const GITHUB = `https://github.com/TwicPics/components-demo-svelte3`;
-  const ONLINE_URL = `https://stackblitz.com/edit/github-wpprt7?file=`;
 
-  $: onlineUrl = `${ONLINE_URL}${gitHubUrl || 'README.md'}`;
-  $: gitHubRedirect = gitHubUrl ? `${GITHUB}/blob/main/${gitHubUrl}` : GITHUB;
+  let onlineUrl;
+
+  $: {
+    onlineUrl = `https://stackblitz.com/github/${GITHUB_REPO_NAME}?file=${filename || 'README.md'}`;
+    const test = /src\/lib\/Twic(.*)\./.exec(filename);
+    if (test) {
+      // eslint-disable-next-line no-unused-vars
+      let [_, initialPath] = test;
+      initialPath = initialPath
+        .replace(/([A-Z])/g, ' $1')
+        .trim()
+        .split(' ')
+        .join('-')
+        .toLowerCase();
+      onlineUrl = `${onlineUrl}&initialpath=${initialPath}`;
+    }
+  }
+
+  $: gitHubUrl = filename ? `${GITHUB}/blob/main/${filename}` : GITHUB;
 </script>
 
 <div id="twic-demo-wrapper" class="">
@@ -28,7 +46,7 @@
     </a>
     <div class="ribbon">
       <div>
-        <a target="_blank" href={gitHubRedirect} rel="noreferrer" title="Open in Github"
+        <a target="_blank" href={gitHubUrl} rel="noreferrer" title="Open in Github"
           ><img src={githubLogo} alt="Open in Github" /></a
         >
         <a target="_blank" href={onlineUrl} rel="noreferrer" title="Open in StackBlitz"

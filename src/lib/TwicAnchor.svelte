@@ -35,7 +35,7 @@
 </script>
 
 <div id="twic-anchor-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicAnchor.svelte">
+  <TwicWrapper filename="src/lib/TwicAnchor.svelte">
     <TwicAbstract title="anchor property">
       <p>
         <strong>

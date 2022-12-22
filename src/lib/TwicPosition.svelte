@@ -18,7 +18,7 @@
 </script>
 
 <div id="twic-position-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicPosition.svelte">
+  <TwicWrapper filename="src/lib/TwicPosition.svelte">
     <TwicAbstract title="position property">
       <p>
         In <Code>contain</Code> mode,

@@ -124,7 +124,7 @@
           title: `position`
         },
         {
-          route: `/pretransform`,
+          route: `/pre-transform`,
           imgSrc: `components/man-hiding-his-hands.jpg`,
           title: `preTransform`
         },

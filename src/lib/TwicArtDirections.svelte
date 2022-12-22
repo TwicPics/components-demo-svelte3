@@ -7,7 +7,7 @@
 </script>
 
 <div id="twic-art-direction-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicArtDirections.svelte">
+  <TwicWrapper filename="src/lib/TwicArtDirections.svelte">
     <TwicAbstract title="Art directions with CSS media queries">
       <p>Setting up components using CSS enables hassle-free responsive designs.</p>
       <p>You do not need to create a set of images derived from the original.</p>

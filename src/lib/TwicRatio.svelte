@@ -20,7 +20,7 @@
 
 <!-- demonstrates ratio features -->
 <div id="twic-ratio-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicRatio.svelte">
+  <TwicWrapper filename="src/lib/TwicRatio.svelte">
     <TwicAbstract title="ratio property">
       <p>
         <strong>

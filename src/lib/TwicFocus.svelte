@@ -14,7 +14,7 @@
 </script>
 
 <div id="twic-focus-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicFocus.svelte">
+  <TwicWrapper filename="src/lib/TwicFocus.svelte">
     <TwicAbstract title="focus property">
       <p>
         <strong>

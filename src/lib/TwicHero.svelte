@@ -6,7 +6,7 @@
 </script>
 
 <div id="twic-hero-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicHero.svelte">
+  <TwicWrapper filename="src/lib/TwicHero.svelte">
     <div class="twic-demo-container">
       <TwicAbstract title="Hero image">
         <p>To display a hero image (or video) you need to :</p>

@@ -28,7 +28,7 @@
 </script>
 
 <div id="twic-bot-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicBot.svelte">
+  <TwicWrapper filename="src/lib/TwicBot.svelte">
     <TwicAbstract title="bot property">
       <p>
         <strong>

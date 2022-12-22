@@ -47,7 +47,7 @@
   router('/page-templating', () => (page = PageTemplating));
   router('/placeholder', () => (page = Placeholder));
   router('/position', () => (page = Position));
-  router('/pretransform', () => (page = PreTransform));
+  router('/pre-transform', () => (page = PreTransform));
   router('/ratio', () => (page = Ratio));
   router('/slider', () => (page = Slider));
   router('/slideshow', () => (page = Slideshow));

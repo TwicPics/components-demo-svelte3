@@ -6,7 +6,7 @@
 </script>
 
 <div id="twic-short-videos-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicShortVideos.svelte">
+  <TwicWrapper filename="src/lib/TwicShortVideos.svelte">
     <TwicAbstract title="Short Videos">
       <p>
         The ideal candidates for TwicPics video integration are hero videos, product videos, and

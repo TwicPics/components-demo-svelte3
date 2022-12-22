@@ -23,7 +23,7 @@
 
 <!-- demonstrates transition features -->
 <div id="twic-transition-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicTransition.svelte">
+  <TwicWrapper filename="src/lib/TwicTransition.svelte">
     <TwicAbstract title="transition properties">
       <p>
         <strong>

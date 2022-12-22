@@ -30,7 +30,7 @@
 </script>
 
 <div id="twic-color-blindness-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicColorBlindness.svelte">
+  <TwicWrapper filename="src/lib/TwicColorBlindness.svelte">
     <TwicAbstract title="Color blindness filters">
       <p>
         You can apply correction filters for color blind people with our <strong

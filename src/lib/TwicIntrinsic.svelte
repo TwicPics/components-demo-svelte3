@@ -6,7 +6,7 @@
 </script>
 
 <div id="twic-intrinsic-container">
-  <TwicWrapper gitHubUrl="src/lib/TwicIntrinsic.svelte">
+  <TwicWrapper filename="src/lib/TwicIntrinsic.svelte">
     <div class="demo-container">
       <TwicAbstract title="intrinsic property">
         <p>
