@@ -64,7 +64,7 @@
       </p>
       <p>
         Please note that anchor is applied after an eventual transformation defined with <a
-          href="/preTransform"
+          href="/pre-transform"
           target="_blank"
           rel="noreferrer">preTransform</a
         > property.

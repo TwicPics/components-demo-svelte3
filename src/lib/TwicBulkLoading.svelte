@@ -69,8 +69,8 @@
           </div>
         {/each}
       </div>
-    </TwicView></TwicWrapper
-  >
+    </TwicView>
+  </TwicWrapper>
 </div>
 
 <style lang="scss">
