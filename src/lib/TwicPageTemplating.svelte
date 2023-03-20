@@ -10,13 +10,13 @@
     `components/src-not-set/woman-1.jpg`,
     `components/src-not-set/boat.jpg`,
     `components/src-not-set/vase.jpg`,
-    `components/src-not-set/street.jpg`,
+    `components/src-not-set/sea.jpg`,
     `components/src-not-set/sea.jpg`,
     `components/src-not-set/flowers.jpg`,
     `components/src-not-set/bird.jpg`,
     `components/src-not-set/feet.jpg`,
     `components/src-not-set/lemons.jpg`,
-    `components/src-not-set/swimming-pool.jpg`,
+    `components/src-not-set/sea.jpg`,
     `components/src-not-set/man.jpg`,
     `components/src-not-set/kodak.jpg`
   ];
@@ -41,16 +41,59 @@
         Click to {srcIsSet ? `unset` : `set`} the src property
       </button>
     </div>
-    <div class="twic-grid">
-      {#each images as image, i}
-        <div class="twic-item">
-          <TwicImg
-            src={srcIsSet ? image : ``}
-            placeholder="preview"
-            ratio={i % 2 === 0 ? 1 : '4:3'}
-          />
-        </div>
-      {/each}
+    <div class="twic-item zero">
+      <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
     </div>
+    <div class="twic-item one">
+      <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
+    </div>
+    <div class="twic-item two">
+      <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
+    </div>
+    <div class="twic-item three">
+      <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
+    </div>
+    <div class="twic-item three">
+      <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
+    </div>
+    <div class="twic-item three">
+      <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
+    </div>
+    <div class="twic-item three">
+      <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
+    </div>
+    <div class="twic-item four">
+      <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
+    </div>
+    
   </TwicWrapper>
 </div>
+
+<style>
+  .twic-item {
+    margin: 6px;
+  }
+  .zero {
+    width: 50%;
+    float: left;
+  }
+  .one {
+    width: 15%;
+    --twic-ratio: calc(0.545);
+    float: left;
+  }
+  .two {
+    width: 30%;
+    --twic-ratio: calc(1.15);
+    float: left;
+  }
+  .three {
+    width: 10.8%;
+    float: left;
+  }
+  .four {
+    width: 46%;
+    float: left;
+    --twic-ratio:calc(4.6)
+  }
+</style>

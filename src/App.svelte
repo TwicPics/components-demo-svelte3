@@ -26,6 +26,7 @@
   import State from './lib/TwicState.svelte';
   import Transition from './lib/TwicTransition.svelte';
   import ShortVideos from './lib/TwicShortVideos.svelte';
+  import Zoom from './lib/TwicZoom.svelte';
 
   let page;
 
@@ -55,6 +56,7 @@
   router('/style-driven', () => (page = StyleDriven));
   router('/transition', () => (page = Transition));
   router('/short-videos', () => (page = ShortVideos));
+  router('/zoom', () => (page = Zoom));
 
   router.start();
 </script>

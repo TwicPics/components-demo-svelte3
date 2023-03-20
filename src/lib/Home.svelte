@@ -143,6 +143,11 @@
           route: `/transition`,
           imgSrc: `components/peacock.jpg`,
           title: `transition`
+        },
+        {
+          route: `/zoom`,
+          imgSrc: `components/zoom/stamps-on-booklet.jpg`,
+          title: `zoom`
         }
       ]
     }
