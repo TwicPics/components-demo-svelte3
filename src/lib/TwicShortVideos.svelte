@@ -91,11 +91,3 @@
   </TwicWrapper>
 </div>
 
-<style lang="scss">
-  #twic-short-videos-container {
-    :global(.twic-item .twic-w) {
-      background-color: #00ffa3;
-      display: block;
-    }
-  }
-</style>

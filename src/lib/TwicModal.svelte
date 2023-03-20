@@ -66,7 +66,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 12px;
         font-size: 1.3em;
         color: #fff;
         background: rgba(0, 0, 0, 0.5);

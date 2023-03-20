@@ -213,7 +213,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 12px;
         height: 40px;
         text-align: center;
         font-size: 1em;
