@@ -65,7 +65,6 @@
     <div class="twic-item four">
       <TwicImg src="components/src-not-set/sea.jpg" placeholder="preview" />
     </div>
-    
   </TwicWrapper>
 </div>
 
@@ -94,6 +93,6 @@
   .four {
     width: 46%;
     float: left;
-    --twic-ratio:calc(4.6)
+    --twic-ratio: calc(4.6);
   }
 </style>
