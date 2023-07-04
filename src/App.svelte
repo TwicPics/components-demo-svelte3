@@ -19,6 +19,7 @@
   import Position from './lib/TwicPosition.svelte';
   import PreTransform from './lib/TwicPreTransform.svelte';
   import Ratio from './lib/TwicRatio.svelte';
+  import Refit from './lib/TwicRefit.svelte';
   import Slider from './lib/TwicSlider.svelte';
   import Slideshow from './lib/TwicSlideshow.svelte';
   import StyleDriven from './lib/TwicStyleDriven.svelte';
@@ -50,6 +51,7 @@
   router('/position', () => (page = Position));
   router('/pre-transform', () => (page = PreTransform));
   router('/ratio', () => (page = Ratio));
+  router('/refit', () => (page = Refit));
   router('/slider', () => (page = Slider));
   router('/slideshow', () => (page = Slideshow));
   router('/state', () => (page = State));
