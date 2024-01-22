@@ -15,16 +15,16 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "2.2.0",
-    "@twicpics/components": "../../../dev/components/dist",
+    "@twicpics/components": "0.27.0",
     "eslint": "8.40.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-svelte3": "4.0.0",
-    "prettier": "3.1.1",
-    "prettier-plugin-svelte": "3.1.2",
-    "sass": "1.69.7",
+    "prettier": "2.8.8",
+    "prettier-plugin-svelte": "2.10.0",
+    "sass": "1.62.1",
     "svelte": "3.59.1",
     "svelte-preprocess": "5.0.3",
-    "vite": "5.0.11"
+    "vite": "4.5.2"
   },
   "dependencies": {
     "page": "1.11.6"
